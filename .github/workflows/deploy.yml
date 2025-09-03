@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir -p dist
           cp -R site/* dist/
-          # Se precisar copiar outros assets, faça aqui
+          cp -R src dist/src
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
