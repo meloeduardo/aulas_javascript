@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Demo CI/CD — JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: system-ui, -apple-system, Arial, sans-serif;">
+  <h1>Deploy automático via GitHub Pages ✅</h1>
+  <p>Este site foi publicado por um pipeline de CD no GitHub Actions.</p>
+  <pre id="out"></pre>
+  <script type="module">
+    import { soma } from '../src/soma.js';
+    document.getElementById('out').textContent =
+      'soma(2,3) = ' + soma(2,3);
+  </script>
+</body>
+</html>
