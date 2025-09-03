@@ -2,9 +2,9 @@
   "name": "javascript-gab",
   "private": true,
   "type": "module",
-  "scripts": {
+   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --ci",
-    "lint": "eslint . --max-warnings=0"
+    "lint": "node ./node_modules/eslint/bin/eslint.js . --max-warnings=0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
