@@ -4,7 +4,7 @@
   "type": "module",
    "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --ci",
-    "lint": "node ./node_modules/eslint/bin/eslint.js . --max-warnings=0"
+    "lint": "node ./node_modules/eslint/bin/eslint.js src tests --max-warnings=0 --quiet"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
