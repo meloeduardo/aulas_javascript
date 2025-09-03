@@ -28,3 +28,10 @@ jobs:
 
       - name: Test
         run: npm test
+
+      - name: Prepare artifact
+          run: |
+             mkdir -p dist
+              cp -R site/* dist/
+              cp -R src dist/src
+
